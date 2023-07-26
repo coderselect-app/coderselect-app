@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de menu</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <img src="./assets/img/logo.png" alt="Logo" class="main-header__logo">
+
+        <a href="./index.html" class="main-header__menu-link">Logout</a>
+
+    </header>
+
+    <div class="main-app">
+        <img src="./assets/img/avatar-2.png" alt="" class="main-app__avatar-select" id="main-app__avatar-select">
+
+        <div class="main-app__list" id="main-app__list">
+
+            <template id="coder-template">
+                <div class="main-app__coder" >
+                    <img src="./assets/img/avatar-1.png" alt="" class="main-app__avatar-coder">
+                    <div class="main-app__name-coder">
+                        <p class="main-app__name-coder"></p>
+                    </div>
+                </div>
+            </template>
+
+        </div>   
+
+        <div class="add-coder">
+            <input type="text" placeholder="Add coder" name="txtCoder" class="add-coder__text" id="add-coder__text" >
+            <button class="add-coder__button" id="add-coder__button"></button>
+        </div>
+
+        <div class="operations">
+            <button class="button-start" id="button-start">START</button>
+            <button class="button-reset" id="button-reset">RESET</button>
+        </div>
+
+    </div>
+
+    <section class="contacto main-items" id="contacto">
+        <img src="./assets/img/profil.png" alt="" class="contacto__img">
+        <p class="contacto__title" id="contacto__title">Prof. Masters</p>
+        <p class="contacto__item">FAQ</p>
+        <p class="contacto__item">Classes</p>
+        <p class="contacto__item">Stats</p>
+    </section>
+        
+
+    <script src="./assets/js/app.js" type="module"></script>
+</body>
+</html>

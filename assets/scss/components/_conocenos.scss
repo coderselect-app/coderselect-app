@@ -1,0 +1,48 @@
+.conocenos{
+
+    padding: 1em;
+    text-align: center;
+    
+    &__title{
+        text-align: left;
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    &__title p:nth-of-type(1){
+        color: black;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    &__title p:nth-of-type(2){
+        color: $border-color;
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    &__title p:nth-of-type(3){
+        color: $secundary-color;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .conocenos__title-coder{
+        color: $bg-color;
+    }
+    
+    &__img img{
+        width: 278px;
+        height: 364px;
+    }
+
+    &__description{
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        width: 278px;
+        height: 275px;
+    }
+}

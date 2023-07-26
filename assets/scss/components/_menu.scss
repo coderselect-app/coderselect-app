@@ -1,0 +1,116 @@
+.main-header{
+    position: fixed;
+    width: 100vw;
+    background-color: $primary-color;
+    height: 4rem;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+
+    &__logo{
+        height: 3rem;
+    }
+
+    &__menu{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__menu-item{
+        padding: 1rem; 
+     
+    }
+
+    &__menu-link{
+     
+        color: $bg-color;
+        
+        margin-left: 1rem; 
+    }
+
+    &__nav{
+        position:fixed;
+        height: calc( 100vh - 4rem);
+        background: $primary-color;
+        opacity: 0.9;
+        width: 80vw;
+        top: 4rem;
+        padding-top: 1rem;
+        right: -80vw;
+        z-index: 100;
+       
+    }
+
+    &__nav.show{
+        right: 0;
+    }
+
+    &__toggle{
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        background: transparent;
+        gap: .60rem;
+        width: 2.2rem;
+        height: 1.6rem;
+        cursor: pointer; 
+    }
+
+    &__toggle > div{
+        background: $border-color;
+        height: 2px;
+        width: 100%;
+        border-radius: 5px;
+        transition: all .5s;
+        transform-origin: left;
+    }
+
+    // &__toggle:hover div:first-child{
+    //     transform: rotate(45deg);
+    // }
+
+    // &__toggle:hover div:nth-child(2){
+    //     opacity: 0;
+    // }
+
+    // &__toggle:hover div:last-child{
+    //     transform: rotate(-45deg);
+    // }
+
+    .first-child{
+        transform: rotate(45deg);
+    }
+    
+    .second-child{
+        opacity: 0;
+    }
+
+    .last-child{
+        transform: rotate(-45deg);
+    }
+
+    @include mq(md){
+        &__menu{
+           display: flex;
+        }
+        &__nav{
+            position: static;
+            background: transparent;
+            padding-top: 0;
+            height: auto;
+            width: auto; 
+        }
+        
+        &__menu-link{
+            color: white; 
+            margin-left: 1rem; 
+        }
+        &__toggle{
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de menu</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <img src="./assets/img/logo.png" alt="Logo" class="main-header__logo">
+
+        <button class="main-header__toggle" id="main-header__toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <nav class="main-header__nav" id="main-header__nav">
+            <ul class="main-header__menu">
+                <li class="main-header__menu-item"><a href="#conocenos" class="main-header__menu-link">Conòcenos</a></li>
+                <li class="main-header__menu-item"><a href="#instrucciones" class="main-header__menu-link">Instrucciones</a></li>
+                <li class="main-header__menu-item"><a href="#login" class="main-header__menu-link">Login</a></li>
+                <li class="main-header__menu-item"><a href="#contacto" class="main-header__menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="main">
+        
+
+        <section class="conocenos main-items" id="conocenos">
+            <div class="conocenos__title">
+                <p>PICK YOUR</p>
+                <p>LUCKY <span class="conocenos__title-coder">CODER</span></p>
+                <p>AND MAKE YOUR CLASS FUN</p>
+            </div>
+
+            <div class="conocenos__img">
+                <img src="./assets/img/cards-coders.png" alt="">
+            </div>
+
+            <div class="conocenos__description">
+                <p>
+                    Utilizamos un algoritmo de seleccion aleatoria que garantiza la iparcialidad y la transparencia
+                    en todo el proceso de seleccion. Ya sea para formar equipos de trabajo, asignar trareas o simplemente
+                    seleccionar estudiantes para cualquier actividad, todos los alumnos tienen la misma oportunidad
+                    de ser elegidos, brindando una experiencia academica iparcial para todos.
+                </p>
+            </div>
+        </section>
+
+        <section class="instrucciones main-items" id="instrucciones">
+           <div class="instrucciones__img">
+                <img src="./assets/img/coders.png" alt="">
+           </div>
+
+           <div class="instrucciones__content">
+                <ul class="instrucciones__menu">
+                    <li class="instrucciones__item">Inicia sesion en la app</li>
+                    <li class="instrucciones__item">Busca tu clase</li>
+                    <li class="instrucciones__item"> Registra tus alumnos</li>
+                    <li class="instrucciones__item">Inicia sorteo</li>
+                </ul>
+           </div>
+        </section>
+
+        <section class="login main-items" id="login">
+            <form action="#" class="login__form" id="login__form">
+                <div>
+                    <div>
+                        <label for="user">User</label>
+                    </div>
+                    <div>
+                        <input type="text" id="user">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">Password</label>
+                    </div>
+                    <div>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="LOGIN" class="button" id="btnSubmit">
+                </div>
+            </form>
+        </section>
+
+        <section class="contacto main-items" id="contacto">
+            <img src="./assets/img/profil.png" alt="" class="contacto__img">
+            <p class="contacto__title">Prof. Masters</p>
+            <p class="contacto__item">FAQ</p>
+            <p class="contacto__item">Classes</p>
+            <p class="contacto__item">Stats</p>
+        </section>
+    </main>
+
+
+    
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+</html>

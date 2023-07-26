@@ -1,0 +1,84 @@
+.main-app{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+
+    &__avatar-select{
+        width: 50%;
+    }
+
+    &__list{
+        border: 2px solid $border-color;
+        border-radius: .5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        visibility: hidden;
+    }
+
+    .show{
+        visibility: visible;
+    }
+
+    &__coder{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__avatar-coder{
+        height: 2rem;
+        display: block;
+        margin: 0;
+    }
+}
+
+.add-coder{
+    display: flex;
+}
+
+.add-coder__text{
+  display: inline-block;
+  border: 1px solid $bg-color;
+  padding: .5em;
+  border-top-left-radius: .3em;
+  border-bottom-left-radius: .3em;
+}
+
+.add-coder__button{
+    
+    width: 2rem;
+    height: 2rem;
+    background-color: $bg-color;
+    background-image: url(../../../assets/img/add_icon.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+    
+   
+}
+
+
+
+.operations{
+    padding: .5rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.select{
+    background: $bg-color;
+    color:white;
+    border-radius:.4em;
+    padding: .5em;
+    transform: rotate(5deg) scale(1.5);
+}

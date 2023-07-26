@@ -1,0 +1,21 @@
+.contacto{
+    background-color: $primary-color;
+    text-align: center;
+    line-height: 2.5rem;
+
+    &__img{
+        width: 50%;
+        margin-top: 1rem;
+    } 
+
+    &__title{
+        color: $secundary-color;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    &__item{
+        color: $secundary-color;
+        font-size: 20px;
+    }
+}
